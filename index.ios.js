@@ -1,3 +1,5 @@
+/* eslint arrow-body-style: ["error", "always"]*/
+
 // This is for IOS
 
 // Goal 1: Get content on the screen with a RN component
@@ -12,8 +14,9 @@ import Header from './src/components/header';
 // Create component
 
 const App = () => {
-//	<Text>Some Text Again. Yes this works</Text>
-	return <Header />;
+	return (
+		<Header />
+	);
 };
 
 /*
@@ -28,4 +31,4 @@ const App = () => {
 	ReactNative.AppRegistry.registerComponent('albums', () => App);
 */
 
-AppRegistry.registerComponent('albums', () => App);
+AppRegistry.registerComponent('albums', () =>App);
