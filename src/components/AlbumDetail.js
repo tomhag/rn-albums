@@ -1,16 +1,17 @@
-// eslint arrow-body-style: ["error", "as-needed"]
+/*eslint arrow-body-style: ["error", "ßalways"]*/
+/*eslint-env es6*/
 
 // #1. Import libs
 import React from 'react';
-import { View, Text } from 'react-native';
-
+import { Text } from 'react-native';
+import Card from './Card';
 
 // #2. Functional component
 const AlbumDetail = (props) => {
 	return (
-		<View>
+		<Card>
 			<Text>{props.album.title}</Text>
-		</View>
+		</Card>
 	);
 };
 

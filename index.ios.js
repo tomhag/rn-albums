@@ -1,4 +1,5 @@
-/* eslint arrow-body-style: ["error", as-needed"]*/
+/*eslint arrow-body-style: ["error", "always"]*/
+/*eslint-env es6*/
 
 // This is for IOS
 

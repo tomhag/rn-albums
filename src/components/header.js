@@ -1,4 +1,5 @@
-/* eslint arrow-body-style: ["error", "always"]*/
+/*eslint arrow-body-style: ["error", "always"]*/
+/*eslint-env es6*/
 
 // #1 Import RN lib (destructured) for making component
 

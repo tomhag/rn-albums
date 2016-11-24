@@ -1,10 +1,11 @@
-// eslint arrow-body-style: ["error", "as-needed"]
+/*eslint arrow-body-style: ["error", "as-needed"]*/
+/*eslint-env es6*/
 
 // #1 Import libs
-	import React, { Component } from 'react';
-	import { View, Text } from 'react-native';
-	import axios from 'axios';
-	import AlbumDetail from './AlbumDetail';
+import React, { Component } from 'react';
+import { View, Text } from 'react-native';
+import axios from 'axios';
+import AlbumDetail from './AlbumDetail';
 
 // #2 Make class-based component
 class AlbumList extends Component {
@@ -38,4 +39,4 @@ class AlbumList extends Component {
 }
 
 // #3 Render 
-	export default AlbumList;
+export default AlbumList;
