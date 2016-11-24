@@ -8,14 +8,18 @@
 // 'react-native' lib knows how to take output and push onscreen(img, txt)
 
 import React from 'react';
-import { AppRegistry } from 'react-native';
-import Header from './src/components/header';
+import { AppRegistry, View } from 'react-native';
+import Header from './src/components/Header';
+import AlbumList from './src/components/AlbumList';
 
 // Create component
 
 const App = () => {
 	return (
-		<Header />
+		<View>
+			<Header headerText={'NewAlbums'} />
+			<AlbumList />
+		</View>
 	);
 };
 
@@ -31,4 +35,4 @@ const App = () => {
 	ReactNative.AppRegistry.registerComponent('albums', () => App);
 */
 
-AppRegistry.registerComponent('albums', () =>App);
+AppRegistry.registerComponent('albums', () => App);
