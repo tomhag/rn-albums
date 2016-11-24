@@ -1,4 +1,4 @@
-/* eslint arrow-body-style: ["error", "always"]*/
+/* eslint arrow-body-style: ["error", as-needed"]*/
 
 // This is for IOS
 
@@ -18,7 +18,7 @@ const App = () => {
 	return (
 		<View>
 			<Header headerText={'NewAlbums'} />
-			<AlbumList />
+			<AlbumList headerText={'Albumlister'} />
 		</View>
 	);
 };
