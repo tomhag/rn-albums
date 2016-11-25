@@ -1,9 +1,11 @@
 /*eslint arrow-body-style: ["error", "as-needed"]*/
 /*eslint-env es6*/
 
+// Class component for full list
+
 // #1 Import libs
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 import axios from 'axios';
 import AlbumDetail from './AlbumDetail';
 

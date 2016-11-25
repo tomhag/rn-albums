@@ -10,6 +10,7 @@ import { View } from 'react-native';
 // #2 Make functional component
 const Card = (props) => {
 	return (
+		// Added ref to props.childen in the JSX
 		<View style={styles.containerStyle}>
 			{props.children}
 		</View>
