@@ -5,14 +5,15 @@
 
 // #1. Import libs
 import React from 'react';
-import { Text, View, Image } from 'react-native';
+import { Text, View, Image, Linking } from 'react-native';
 import Card from './Card';
 import CardSection from './CardSection';
+import Button from './Button';
 
 // #2. Make functional component
 //const AlbumDetail = (props) => {
 const AlbumDetail = ({ album }) => {
-	const { thumbnail_image, title, artist, image } = album;
+	const { thumbnail_image, title, artist, image, url } = album;
 	const { 
 		thumbnailStyle,
 		headContStyle,
@@ -42,6 +43,12 @@ const AlbumDetail = ({ album }) => {
 						style={imageStyle}
 						source={{ uri: image }}
 					/>					
+			</CardSection>
+
+			<CardSection>
+					<Button anyPress={() => Linking.openURL(url)}>
+						Buy Me!
+					</Button>					
 			</CardSection>
 
 		</Card>	
